@@ -6,6 +6,7 @@ Using pandoc and markdown to produce reveal.js slideshows
 
 :Author: Guillaume Bouvier
 :Organization: Institut Pasteur
+:Place: The place to be ...
 :Date: |date|
 
 Slide 1
