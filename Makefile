@@ -1,14 +1,14 @@
-.SUFFIXES: .md .html .pdf
+.SUFFIXES: .rst .html .pdf
 .PRECIOUS: %.pdf %.html
 .PRECIOUS: 
 
-.md.html: 
+.rst.html: 
 	pandoc --toc --mathjax=MathJax/MathJax.js\
-          --template=template-revealjs.html\
+          --template=template-revealjs.html --variable transition="none"\
           -s -t html5\
-          -f markdown --section-divs -o $@ $<
+          -f rst --section-divs -o $@ $<
 
-.md.pdf:
+.rst.pdf:
 	pandoc --listings -H header.tex\
           -V theme:Warsaw -V colortheme:seahorse\
-          -s -t beamer -f markdown -o $@ $<
+          -s -t beamer -f rst -o $@ $<
