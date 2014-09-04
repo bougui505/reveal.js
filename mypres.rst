@@ -1,5 +1,5 @@
 =========================================================
-Using pandoc and markdown to produce reveal.js slideshows
+Presentation title
 =========================================================
 
 .. |date| replace:: 2014/09/03

@@ -4,7 +4,8 @@
 
 .rst.html: 
 	pandoc --toc --mathjax=MathJax/MathJax.js\
-          --template=template-revealjs.html --variable transition="none"\
+          --template=template-revealjs.html --variable transition="default"\
+		  --variable theme="serif"\
           -s -t html5\
           -f rst --section-divs -o $@ $<
 
